@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .grid{
+            display:grid;
+           grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+          gap:1rem;
+        }
+        .grid > div{
+            background:black;
+            padding:1rem;
+            position:relative;
+           
+
+        }
+
+        .grid > div::before{
+            content:"";
+           padding-top:100%;
+           display:block;
+           
+
+        }
+        .grid > div > img{
+            position:absolute;
+            top:50%;
+            left:50%;
+           max-width:100%;
+           transform:translate(-50%, -50%);
+           
+         
+        
+
+        }
+        body{
+            margin:2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div><img src="timothy2.jpg" alt=""></div>
+        <div><img src="timothy2.jpg" alt=""></div>
+        <div><img src="timothy2.jpg" alt=""></div>
+        <div><img src="timothy2.jpg" alt=""></div>
+        <div><img src="timothy2.jpg" alt=""></div>
+        <div><img src="timothy2.jpg" alt=""></div>
+        <div><img src="timothy2.jpg" alt=""></div>
+        <div><img src="timothy2.jpg" alt=""></div>
+        <div><img src="timothy2.jpg" alt=""></div>
+        <div><img src="timothy2.jpg" alt=""></div>
+    </div>
+    
+</body>
+</html>
